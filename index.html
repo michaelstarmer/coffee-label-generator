@@ -16,9 +16,10 @@
 
     <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="header text-center">
-            <h1>Coffee label generator</h1>
+        <div class="col col-lg-8 offset-lg-2">
+          <div class="header text-center my-5">
+            <h1>GENERATOR</h1>
+            <h3>Tilpassede kaffeposer</h3>
           </div>
         </div>
       </div>
@@ -26,29 +27,28 @@
 
     <div class="container my-5">
       <div class="row">
-        <div class="col-12 col-lg-4 offset-lg-1">
+        <div class="input-wrap--left col-12 col-lg-4 offset-lg-2">
           <form>
             <div class="form-row">
               <div class="col-4">
                 <div class="form-group">
-                  <label for="color">Velg farge</label>
+                  <label for="color"><strong>1.</strong> Velg farge</label>
                   <input type="color" id="color" class="form-control">
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <label for="title">Velg tittel</label>
+            <div class="form-group mt-4">
+              <label for="title"><strong>2.</strong> Velg tittel</label>
               <input type="text" id="title" class="form-control" autocomplete="off" autofocus>
             </div>
-          
-            <div class="form-group">
-              <label for="subtitle">Velg undertittel</label>
+            <div class="form-group mt-4">
+              <label for="subtitle"><strong>3.</strong> Velg undertittel</label>
               <input type="text" id="subtitle" class="form-control" autocomplete="off">
             </div>
           </form>
         </div>
 
-        <div class="col-12 col-lg-4 offset-lg-1 my-2 text-center d-flex align-items-center">
+        <div class="input-wrap--right col-12 col-lg-4 my-2 text-center d-flex align-items-center">
           <button id="generateBtn" class="btn btn-success btn-lg btn-block py-4 uppercase bold">Generer</button>
         </div>
 
@@ -58,7 +58,7 @@
     <div class="container my-5">
       <div class="row">
         <div class="col-12 col-lg-8 offset-lg-2">
-          <div class="preview-area d-none text-center py-5">
+          <div class="preview-area text-center py-5">
 
             
             <div class="preview-area__image">

@@ -45,11 +45,10 @@ input[type="text"] {
 
 /* Elements */
 .preview-area__image {
-  background: url(../img/bg-brown.png) 50% 0 no-repeat;
+  background: url(../img/template-plain.png) 50% 0 no-repeat;
   height: 600px;
   max-width: 400px;
   overflow: hidden;
-  border: 1px solid #000;
   margin: 0 auto;
 }
 
@@ -68,4 +67,14 @@ input[type="text"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.input-wrap--right {
+  border-left: 1px solid rgb(207, 207, 207);
+}
+
+@media screen and (max-width: 996px) {
+  .input-wrap--right {
+    border: none;
+  }
 }

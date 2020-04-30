@@ -1,5 +1,12 @@
 $(document).ready(() => {
   
+
+  $("#color").val("#009562");
+  $("#title").val("Frokostkaffe");
+  $("#subtitle").val("En ukomplisert hverdagskaffe");
+
+  createPreview();
+
   function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
 
@@ -8,22 +15,16 @@ $(document).ready(() => {
       return null;
     }
 
-    console.log({result})
-    console.log('Math:', Math.max(parseInt(result[1])))
-
     const rgbValue = { 
       r: parseInt(result[1], 16),
       g: parseInt(result[2], 16),
       b: parseInt(result[3], 16)
     }
-    console.log({rgbValue})
     
     return rgbValue;
   }
-  
-  const generateBtn = $("#generateBtn");
-  
-  generateBtn.click(function() {
+
+  function createPreview() {
     let previewContainer = $(".preview-area");
     let color = $("#color").val();
     let title = $("#title").val();
@@ -31,6 +32,7 @@ $(document).ready(() => {
 
     let prvTitle = $("#preview-title");
     let prvSubtitle = $("#preview-subtitle");
+
 
     const {r,g,b} = hexToRgb(color);
     console.log(r,g,b)
@@ -42,6 +44,10 @@ $(document).ready(() => {
     prvSubtitle.text(subtitle);
 
     previewContainer.removeClass("d-none");
+  }
+  
+  $("#generateBtn").click(function() {
+    createPreview();
   })
 
 })
