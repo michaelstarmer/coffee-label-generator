@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header text-center">
+            <h1>Coffee label generator</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-lg-4 offset-lg-1">
+          <form>
+            <div class="form-row">
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="color">Velg farge</label>
+                  <input type="color" id="color" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="title">Velg tittel</label>
+              <input type="text" id="title" class="form-control" autocomplete="off" autofocus>
+            </div>
+          
+            <div class="form-group">
+              <label for="subtitle">Velg undertittel</label>
+              <input type="text" id="subtitle" class="form-control" autocomplete="off">
+            </div>
+          </form>
+        </div>
+
+        <div class="col-12 col-lg-4 offset-lg-1 my-2 text-center d-flex align-items-center">
+          <button id="generateBtn" class="btn btn-success btn-lg btn-block py-4 uppercase bold">Generer</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <div class="preview-area d-none text-center py-5">
+
+            
+            <div class="preview-area__image">
+              <div id="label" class="label">
+                <h4 id="preview-title" class="label--title">Brazil Blend</h4>
+                <h5 id="preview-subtitle" class="label--subtitle">Rund og balansert espresso.</h5>
+              </div>
+              <div class="preview-area__color-bg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
