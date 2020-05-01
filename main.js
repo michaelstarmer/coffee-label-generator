@@ -45,9 +45,25 @@ $(document).ready(() => {
 
     previewContainer.removeClass("d-none");
   }
-  
   $("#generateBtn").click(function() {
     createPreview();
+  })
+
+  $("#color").on('input', function() {
+    createPreview();
+  })
+  $("#title").change(function() {
+    createPreview();
+  })
+  $("#subtitle").change(function() {
+    createPreview();
+  })
+  
+
+  $("#downloadBtn").click(function() {
+    html2canvas(document.querySelector("#capture")).then(canvas => {
+      $("#result").html(canvas);
+    });
   })
 
 })
